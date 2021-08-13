@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<style>
+{
+   margin: 0;
+   padding:0:
+   box-sizing: border-box;
+}
+.full-page
+{
+
+height: 100%
+width:  100%
+background image:-image: linear-gradient(rgba(0,0,0,0,.4),rgba(0,0,0,4)),url
+background-position: center;
+background-size: cover;
+position: absolute;
+
+}
+
+</style>
+
+<body>
+<header>
+<body style="background-color:silver;">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<div class="marquee">
+  <p><marquee><b style="color:purple;font-size:20px;"> #PLAY PLAY DON DON </b></marquee></b></div>
+<a href="Allout.html">
+
+<img src="img/535.jpg" width="20%" height="20%" border="5"style="border-color:purple"title="No Doubt"></a>
+</body>
+</header>
+<form id="form" action"/" method="GET">
+<script defer src="script.js">
+const name = document.getElementById('name')
+const password = document.getElementById('password')
+const form = document.getElementById('form')
+const errorElement = document.getElementById('error')
+
+form.addEventlistener('submit', (e) => {
+ let messages = []
+ if (name.value === '' || name.value == null){
+   message.push('Name is required')
+  }
+ 
+ if (message.length > 0) {
+   e.preventDefault()
+   errorElement.innerText = message.join(',')
+  }
+})
+</script>
+<div class="container">
+<div class="card">
+  <h1 id="h1">We are happy to welcome you</h1>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+	  <div id="error"></div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Age">Age</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Age" name="Age" placeholder="Your Age..">
+      </div>
+    </div>
+    <div class="row">
+      <div id="passcontent">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-25">
+        <select id="country" name="country">
+          <option value="none" placeholder="country"></option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+          <option value="other">Outside Europe</option>
+        </select>
+      </div>
+    </div> 
+    <div class="row">
+      <div id="passcontent">
+        <label for="gender">Gender :</label>
+      </div>
+      <div class="col-25">
+      <input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">  
+<label>   
+Phone :  
+</label> 
+</div>
+ <div class="phone">
+<input type="text" name="country code"  value="+1" size="12"/>
+</div>
+</div>
+<div class="row">
+      <div class="col-25">  
+   
+ </div>
+   <div class="phone">
+
+</div>
+</div>    
+<div class="row">
+      <div class="col-25">
+        <label for="email">Email Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="email" placeholder="Your Email..">
+      </div>
+   
+<div class="row">
+      <div id="pass">
+<label for="password">Password: </label>
+</div>
+ <div id="passcontent">
+   <input type="Password"  name="pass" />
+ </div>
+</div> 
+<div class="row">
+      <div id="pass"> 
+<label for="password"> Re-type password: </label>
+</div>
+<div id="passcontent">
+<input type="Password" id="repass" name="repass"> 
+</div>
+</div>
+<p id="button"><input type="submit" value="Submit"></p>
+ 
+    </div>  
+</div>
+</body>
+</html>
